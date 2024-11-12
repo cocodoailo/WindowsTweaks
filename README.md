@@ -93,8 +93,14 @@ Set-PSReadLineOption -EditMode Emacs
 
 Set-PSReadLineOption -AddToHistoryHandler {
         param([string]$line)
-        return $line.Length -gt 2 -and $line[0] -ne ' ' -and $line[0] -ne ';'
+        return $line.Length -gt 3 -and $line[0] -ne ' ' -and $line[0] -ne ';'
 }
+```
+
+如果你觉得打开文件再复制麻烦, 也可以使用这条命令一键设置:
+
+```ps1
+curl -fLo $PROFILE --create-dirs https://raw.githubusercontent.com/cocodoailo/WindowsTweaks/refs/heads/main/Microsoft.PowerShell_profile.ps1
 ```
 
 ### Windows Terminal
