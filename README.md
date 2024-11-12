@@ -9,6 +9,9 @@
 > winget install --id Microsoft.PowerShell --source winget
 > ```
 
+> [!TIP]
+> 如果终端下载失败或者下载很慢, 推荐开启代理软件的 TUN 模式或者设置终端代理.
+
 ## 必备软件
 
 有些软件我推荐从应用商店（Microsoft Store）安装, 有些软件我推荐从 scoop 安装, 有些软件我推荐从官网下载安装包.
@@ -126,6 +129,10 @@ To remove Cortana, please open PowerShell as administrator and run[^how-do-i-dis
 Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
 ```
 
+### 小技巧
+
+#### 设置终端代理
+
 ### 系统偏好设置
 
 > [!TIP]
@@ -169,6 +176,11 @@ Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
 
 - 微软电脑管家
 - 资讯
+
+## 常见问题
+
+### 获取打开此'ms-cortana2'链接的应用 WIP
+
 
 [^how-do-i-disable-the-cortana-shortcut-key]: [How do I disable the Cortana shortcut key?](https://learn.microsoft.com/en-us/answers/questions/1367909/how-do-i-disable-the-cortana-shortcut-key)
 [^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
