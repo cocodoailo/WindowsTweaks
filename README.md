@@ -88,6 +88,7 @@ Set-PSReadLineOption -AddToHistoryHandler {
 
 ### Windows Terminal
 
+推荐设置默认配置文件为 PowerShell. 打开设置 JSON 文件修改 copy 和 paste 的 `"keys"` 为 `"ctrl+shift+c"` 和 `"ctrl+shift+v"`.
 
 ### Remove Cortana
 
