@@ -86,7 +86,13 @@ wsl --install
 
 ### 映射 CapsLk 为 Ctrl 和 ESC
 
-安装 AutoHotkey, 下载 remapping.ahk 到自动启动目录, 打开 PowerShell 运行:
+安装 AutoHotkey:
+
+```ps1
+winget install --id AutoHotkey.AutoHotkey --source winget
+```
+
+下载 remapping.ahk 到自动启动目录, 打开 PowerShell 运行:
 
 ```ps1
 curl -fLo "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\remapping.ahk" --create-dirs https://raw.githubusercontent.com/cocodoailo/WindowsTweaks/refs/heads/main/remapping.ahk
@@ -121,7 +127,7 @@ curl -fLo $PROFILE --create-dirs https://raw.githubusercontent.com/cocodoailo/Wi
 
 你可以在 https://windowsterminalthemes.dev/ 找到 Windows Terminal 的配色方案. 粘贴到 JSON 配置文件的 `"schemes"`. 我喜欢使用 GruvboxDarkHard, 并在 Windows Terminal 设置 > 配置文件 > 默认值 > 外观 > 自动调整无法区分的文本亮度 (始终)
 
-### 禁用 LenovoFnAndFunctionKeys 服务
+### 禁用 LenovoFnAndFunctionKeys 服务 (可能是小新独有的问题)
 
 这个服务会导致按 `Fn+Ctrl` 很烦, `WIN + R` 打开运行, 输入 `cmd`, 按 `ctrl+shift+enter` 以管理员身份启动 `cmd` 运行:
 
