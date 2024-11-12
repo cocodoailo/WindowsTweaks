@@ -30,8 +30,16 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 #### Git
 
+从 scoop 安装 Git 然后再安装 WSL, 这样在 PowerShell 输入 `bash` 可以打开 git-bash. 可以在 git-bash 下使用 `ssh-copy-id`.
+
 ```ps1
 scoop install git
+```
+
+如果希望 Windows 就有 `ssh-copy-id` 可以安装 git-with-openssh:
+
+```ps1
+scoop install git-with-openssh
 ```
 
 #### WSL 2
