@@ -85,7 +85,7 @@ curl -fLo "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\remapping.
 
 ### 让 PowerShell 类似 Fish Shell
 
-设置 PowerShell 命令行类似 Linux 的命令行. 可以用 `Ctrl+D` 退出终端. 打开 PowerShell 输入 `code $PROFILE` 编辑 `Microsoft.PowerShell_profile.ps1`[^Temporarily_disabling_command_history]. 
+设置 PowerShell 命令行类似 Linux 的命令行. 可以用 `Ctrl+D` 退出终端. 不记录以空格或者 `;` 开始的命令到历史记录. 打开 PowerShell 输入 `code $PROFILE` 编辑 `Microsoft.PowerShell_profile.ps1`[^Temporarily_disabling_command_history]. 
 
 ```ps1
 Import-Module PSReadLine
