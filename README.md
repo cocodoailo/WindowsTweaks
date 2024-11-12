@@ -121,12 +121,13 @@ curl -fLo $PROFILE --create-dirs https://raw.githubusercontent.com/cocodoailo/Wi
 
 你可以在 https://windowsterminalthemes.dev/ 找到 Windows Terminal 的配色方案. 粘贴到 JSON 配置文件的 `"schemes"`. 我喜欢使用 GruvboxDarkHard, 并在 Windows Terminal 设置 > 配置文件 > 默认值 > 外观 > 自动调整无法区分的文本亮度 (始终)
 
-### Remove Cortana
+### 禁用 LenovoFnAndFunctionKeys 服务
 
-To remove Cortana, please open PowerShell as administrator and run[^how-do-i-disable-the-cortana-shortcut-key]:
+这个服务会导致按 `Fn+Ctrl` 很烦, `WIN + R` 打开运行, 输入 `cmd`, 按 `ctrl+shift+enter` 以管理员身份启动 `cmd` 运行:
 
 ```ps1
-Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
+sc config LenovoFnAndFunctionKeys start=disabled
+net stop LenovoFnAndFunctionKeys
 ```
 
 ### 小技巧
