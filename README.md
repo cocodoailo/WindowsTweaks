@@ -1,6 +1,6 @@
 # Windows Tweaks
 
-微调 Windows 11 家庭版.
+微调 Windows 11 家庭版. 欢迎分享你的 Windows/WSL 使用技巧 [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## 必备软件
 
