@@ -83,9 +83,9 @@ curl -fLo "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\remapping.
 > [!TIP]
 > 放到自动启动目录后会在每次开机后运行, `Win+R` 打开运行, 输入 `shell:startup` 回车即可打开自动启动目录. 双击 `remapping.ahk` 即可手动启动脚本.
 
-### Make PowerShell likes Fish Shell
+### 让 PowerShell 类似 Fish Shell
 
-打开 PowerShell 输入 `code $PROFILE` 编辑 `Microsoft.PowerShell_profile.ps1`. 
+设置 PowerShell 命令行类似 Linux 的命令行. 可以用 `Ctrl+D` 退出终端. 打开 PowerShell 输入 `code $PROFILE` 编辑 `Microsoft.PowerShell_profile.ps1`[^Temporarily_disabling_command_history]. 
 
 ```ps1
 Import-Module PSReadLine
@@ -93,7 +93,7 @@ Set-PSReadLineOption -EditMode Emacs
 
 Set-PSReadLineOption -AddToHistoryHandler {
         param([string]$line)
-        return $line.Length -gt 3 -and $line[0] -ne ' ' -and $line[0] -ne ';'
+        return $line.Length -gt 2 -and $line[0] -ne ' ' -and $line[0] -ne ';'
 }
 ```
 
@@ -158,3 +158,4 @@ Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
 [^how-do-i-disable-the-cortana-shortcut-key]: [How do I disable the Cortana shortcut key?](https://learn.microsoft.com/en-us/answers/questions/1367909/how-do-i-disable-the-cortana-shortcut-key)
 [^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 [^wsl_localhost_proxy]: [https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310)
+[^Temporarily_disabling_command_history]: [Temporarily disabling command history](https://github.com/PowerShell/PSReadLine/issues/2698)
