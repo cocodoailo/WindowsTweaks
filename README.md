@@ -74,7 +74,7 @@ wsl --install
 
 ### 映射 CapsLk 为 Ctrl 和 ESC
 
-安装 AutoHotkey, 下载 remapping.ahk 到自动启动目录:
+安装 AutoHotkey, 下载 remapping.ahk 到自动启动目录, 打开 PowerShell 运行:
 
 ```ps1
 curl -fLo "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\remapping.ahk" --create-dirs https://raw.githubusercontent.com/cocodoailo/WindowsTweaks/refs/heads/main/remapping.ahk
