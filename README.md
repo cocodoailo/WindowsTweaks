@@ -30,6 +30,12 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ### WSL 2
 
+You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator", enter the wsl --install command, then restart your machine.[^wsl_install]
+
+```ps1
+wsl --install
+```
+
 ### 通过官网下载安装包安装
 
 - AutoHotkey
@@ -107,3 +113,4 @@ Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
 - 资讯
 
 [^how-do-i-disable-the-cortana-shortcut-key]: [How do I disable the Cortana shortcut key?](https://learn.microsoft.com/en-us/answers/questions/1367909/how-do-i-disable-the-cortana-shortcut-key)
+[^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
