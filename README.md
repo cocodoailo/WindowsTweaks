@@ -56,7 +56,7 @@ wsl --install
 > 打开 PowerShell 输入 `code %USERPROFILE%\.wslconfig` 添加下面的内容配置网络[^wsl_localhost_proxy]:
 > ```
 > [experimental]
-> autoMemoryReclaim=gradual  # gradual  | dropcache | disabled
+> autoMemoryReclaim=gradual
 > networkingMode=mirrored
 > dnsTunneling=true
 > firewall=true
