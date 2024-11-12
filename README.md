@@ -62,6 +62,8 @@ wsl --install
 > firewall=true
 > autoProxy=true
 > ```
+>
+> 运行 `wsl --shutdown` 关闭 WSL, 重新打开 WSL 生效.
 
 ### 通过官网下载安装包安装
 
