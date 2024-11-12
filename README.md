@@ -42,6 +42,19 @@ You can now install everything you need to run WSL with a single command. Open P
 wsl --install
 ```
 
+> [!WARNING]
+> *wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。*
+>
+> 编辑 `%USERPROFILE%\.wslconfig` 配置网络[^wsl_localhost_proxy]:
+> ```
+> [experimental]
+> autoMemoryReclaim=gradual  # gradual  | dropcache | disabled
+> networkingMode=mirrored
+> dnsTunneling=true
+> firewall=true
+> autoProxy=true
+> ```
+
 ### 通过官网下载安装包安装
 
 - AutoHotkey
@@ -120,3 +133,4 @@ Get-AppxPackage -Name Microsoft.549981C3F5F10 -AllUsers | Remove-AppxPackage
 
 [^how-do-i-disable-the-cortana-shortcut-key]: [How do I disable the Cortana shortcut key?](https://learn.microsoft.com/en-us/answers/questions/1367909/how-do-i-disable-the-cortana-shortcut-key)
 [^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+[^wsl_localhost_proxy]: [https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310)
