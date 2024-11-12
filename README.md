@@ -90,6 +90,8 @@ Set-PSReadLineOption -AddToHistoryHandler {
 
 推荐设置默认配置文件为 PowerShell. 打开设置 JSON 文件修改 copy 和 paste 的 `"keys"` 为 `"ctrl+shift+c"` 和 `"ctrl+shift+v"`.
 
+你可以在 https://windowsterminalthemes.dev/ 找到 Windows Terminal 的配色方案. 粘贴到 JSON 配置文件的 `"schemes"`. 我喜欢使用 GruvboxDarkHard, 并在 Windows Terminal 设置 > 配置文件 > 默认值 > 外观 > 自动调整无法区分的文本亮度 (始终)
+
 ### Remove Cortana
 
 To remove Cortana, please open PowerShell as administrator and run[^how-do-i-disable-the-cortana-shortcut-key]:
