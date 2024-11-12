@@ -97,7 +97,7 @@ Set-PSReadLineOption -AddToHistoryHandler {
 }
 ```
 
-如果你觉得打开文件再复制麻烦, 也可以使用这条命令一键设置:
+如果你觉得打开文件再复制粘贴麻烦, 也可以使用这条命令一键设置:
 
 ```ps1
 curl -fLo $PROFILE --create-dirs https://raw.githubusercontent.com/cocodoailo/WindowsTweaks/refs/heads/main/Microsoft.PowerShell_profile.ps1
