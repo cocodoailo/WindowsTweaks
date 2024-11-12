@@ -72,6 +72,17 @@ wsl --install
 
 ## 配置
 
+### 映射 CapsLk 为 Ctrl 和 ESC
+
+安装 AutoHotkey, 下载 remapping.ahk 到自动启动目录:
+
+```ps1
+curl -fLo "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\remapping.ahk" --create-dirs https://raw.githubusercontent.com/cocodoailo/WindowsTweaks/refs/heads/main/remapping.ahk
+```
+
+> [!TIP]
+> 放到自动启动目录后会在每次开机后运行, `Win+R` 打开运行, 输入 `shell:startup` 回车即可打开自动启动目录. 双击 `remapping.ahk` 即可手动启动脚本.
+
 ### Make PowerShell likes Fish Shell
 
 打开 PowerShell 输入 `code $PROFILE` 编辑 `Microsoft.PowerShell_profile.ps1`. 
