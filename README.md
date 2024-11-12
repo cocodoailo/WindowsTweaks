@@ -19,7 +19,7 @@
 
 ### 通过 PowerShell 安装
 
-### [scoop](https://scoop.sh/)
+#### [scoop](https://scoop.sh/)
 
 Open a PowerShell terminal (version 5.1 or later) and from the PS C:\> prompt, run:
 
@@ -28,7 +28,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-### WSL 2
+#### Git
+
+```ps1
+scoop install git
+```
+
+#### WSL 2
 
 You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator", enter the wsl --install command, then restart your machine.[^wsl_install]
 
