@@ -53,7 +53,7 @@ wsl --install
 > [!WARNING]
 > *wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。*
 >
-> 编辑 `%USERPROFILE%\.wslconfig` 配置网络[^wsl_localhost_proxy]:
+> 打开 PowerShell 输入 `code %USERPROFILE%\.wslconfig` 添加下面的内容配置网络[^wsl_localhost_proxy]:
 > ```
 > [experimental]
 > autoMemoryReclaim=gradual  # gradual  | dropcache | disabled
