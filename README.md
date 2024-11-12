@@ -2,6 +2,13 @@
 
 微调 Windows 11 家庭版. 欢迎分享你的 Windows/WSL 使用技巧 [CONTRIBUTING.md](./CONTRIBUTING.md).
 
+> [!IMPORTANT]
+> 本文所说的 **PowerShell 是黑色图标的 PowerShell**, 不是那个蓝色图标的 Windows PowerShell. [安装 PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) 打开命令行运行:
+> 
+> ```ps1
+> winget install --id Microsoft.PowerShell --source winget
+> ```
+
 ## 必备软件
 
 有些软件我推荐从应用商店（Microsoft Store）安装, 有些软件我推荐从 scoop 安装, 有些软件我推荐从官网下载安装包.
@@ -10,6 +17,8 @@
 > 通过应用商店安装软件不需要开代理, 如果访问不了 Microsoft Store 尝试关闭代理
 
 ### 通过 Microsoft Store 搜索安装（获取）
+
+从 Microsoft Store 获取和使用 `winget` 安装是一样的, 你也可以通过 `winget` 安装.
 
 - PowerShell
 - Microsoft PowerToys
