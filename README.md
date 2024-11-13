@@ -184,11 +184,6 @@ net stop LenovoFnAndFunctionKeys
 - 微软电脑管家
 - 资讯
 
-## 常见问题
-
-### 获取打开此'ms-cortana2'链接的应用 WIP
-
-
 [^how-do-i-disable-the-cortana-shortcut-key]: [How do I disable the Cortana shortcut key?](https://learn.microsoft.com/en-us/answers/questions/1367909/how-do-i-disable-the-cortana-shortcut-key)
 [^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 [^wsl_localhost_proxy]: [https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310)
