@@ -14,8 +14,6 @@
 
 ## 必备软件
 
-有些软件我推荐从应用商店（Microsoft Store）安装, 有些软件我推荐从 scoop 安装, 有些软件我推荐从官网下载安装包.
-
 > [!TIP]
 > 通过应用商店安装软件不需要开代理, 如果访问不了 Microsoft Store 尝试关闭代理
 
@@ -76,11 +74,6 @@ wsl --install
 > ```
 >
 > 运行 `wsl --shutdown` 关闭 WSL, 重新打开 WSL 生效.
-
-### 通过官网下载安装包安装
-
-- AutoHotkey
-- Obsidian
 
 ## 配置
 
