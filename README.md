@@ -34,12 +34,11 @@
 
 首先关闭系统提供的三指触控功能。
 
-![屏幕截图 2024-11-17 224022](https://github.com/user-attachments/assets/1282cd20-936a-4e8a-8c3d-f6b289e307a7)
-
+![关闭三指触控截图](https://github.com/user-attachments/assets/cbf79f7b-9bda-42cf-a3fc-ebaf71e14c7f)
 
 然后调整 Three Finger Drag 的配置。
 
-![image](https://github.com/user-attachments/assets/04c1dcc3-937e-4550-a538-f65b90cdc17f)
+![Three Finger Drag 调整截图](https://github.com/user-attachments/assets/04c1dcc3-937e-4550-a538-f65b90cdc17f)
 
 
 ### 通过 PowerShell 安装
