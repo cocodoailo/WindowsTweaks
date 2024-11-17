@@ -25,7 +25,21 @@
 - Microsoft PowerToys
 - Auto Dark Mode
 - Visual Studio Code
+- Three Finger Drag
 - Visual Studio (可选)
+
+#### Three Finger Drag
+
+在 Windows 精确式触控板上启用 macOS 样式的三指拖动功能。这个软件可以在 Microsoft Store 搜索到。三指拖动这个功能非常好用，拖动窗口不需要双击，只需将光标放在窗口标题栏，三个手指在触控板上移动就可以做到拖动窗口。启用这个功能后三指还能用来选中文本。
+
+首先关闭系统提供的三指触控功能。
+
+![image](https://github.com/user-attachments/assets/8de5e2ea-713e-4981-b9bf-718055a2346f)
+
+然后调整 Three Finger Drag 的配置。
+
+![image](https://github.com/user-attachments/assets/04c1dcc3-937e-4550-a538-f65b90cdc17f)
+
 
 ### 通过 PowerShell 安装
 
