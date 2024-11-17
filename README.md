@@ -25,7 +25,7 @@
 - Microsoft PowerToys
 - Auto Dark Mode
 - Visual Studio Code
-- Three Finger Drag
+- Three Finger Drag[^three_finger_drag]
 - Visual Studio (可选)
 
 #### Three Finger Drag
@@ -195,3 +195,4 @@ net stop LenovoFnAndFunctionKeys
 [^wsl_install]: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 [^wsl_localhost_proxy]: [https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310)
 [^Temporarily_disabling_command_history]: [Temporarily disabling command history](https://github.com/PowerShell/PSReadLine/issues/2698)
+[^three_finger_drag]: https://linux.do/t/topic/212127
