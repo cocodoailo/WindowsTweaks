@@ -34,7 +34,8 @@
 
 首先关闭系统提供的三指触控功能。
 
-![image](https://github.com/user-attachments/assets/8de5e2ea-713e-4981-b9bf-718055a2346f)
+![屏幕截图 2024-11-17 224022](https://github.com/user-attachments/assets/1282cd20-936a-4e8a-8c3d-f6b289e307a7)
+
 
 然后调整 Three Finger Drag 的配置。
 
