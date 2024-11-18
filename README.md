@@ -7,6 +7,7 @@
 > 
 > ```ps1
 > winget install --id Microsoft.PowerShell --source winget
+> winget install Microsoft.VisualStudioCode
 > ```
 
 > [!TIP]
