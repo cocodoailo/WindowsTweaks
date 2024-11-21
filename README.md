@@ -150,7 +150,7 @@ net stop LenovoFnAndFunctionKeys
 
 ### 系统偏好设置
 
-打开 PowerShell 运行下面的命令可以方便地进行系统偏好设置。
+打开 PowerShell 运行下面的命令可以方便地进行系统偏好设置。不知道为什么，隐藏小组件通过 PowerShell 会提示没有权限。
 
 ```ps1
 # 修改 ShowRecent值为 0 （关闭最近打开的项目）
@@ -158,7 +158,7 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 # 对齐或按 Alt+Tab 时显示应用中的标签页：不显示选项卡.
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "MultiTaskingAltTabFilter" -Value 3
 # 隐藏小组件
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarDa" -Value 0
+# Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarDa" -Value 0
 # 隐藏任务栏搜索按钮
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" -Value 0
 # Don't hide file extensions
