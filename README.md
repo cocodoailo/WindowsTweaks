@@ -137,7 +137,7 @@ net stop LenovoFnAndFunctionKeys
 
 ### 系统偏好设置
 
-关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。或者使用下面的脚本：
+关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。或者使用下面的脚本（需要以管理员身份运行 PowerShell）：
 
 ```ps1
 # Set variables to indicate value and key to set
