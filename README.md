@@ -150,6 +150,8 @@ net stop LenovoFnAndFunctionKeys
 
 ### 系统偏好设置
 
+关闭开始菜单 web 搜索（WIP）
+
 打开 PowerShell 运行下面的命令可以方便地进行系统偏好设置。不知道为什么，隐藏小组件通过 PowerShell 会提示没有权限。
 
 ```ps1
