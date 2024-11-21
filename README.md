@@ -137,7 +137,7 @@ net stop LenovoFnAndFunctionKeys
 
 ### 系统偏好设置
 
-关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。或者使用下面的脚本（需要以管理员身份运行 PowerShell）：
+关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。或者使用下面的脚本[^how-to-update-or-add-a-registry-key-value-with-powershell]（需要以管理员身份运行 PowerShell）：
 
 ```ps1
 # Set variables to indicate value and key to set
@@ -216,3 +216,4 @@ Get-Process explorer | Stop-Process
 [^wsl_localhost_proxy]: [https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310](https://github.com/microsoft/WSL/issues/10753#issuecomment-1814839310)
 [^Temporarily_disabling_command_history]: [Temporarily disabling command history](https://github.com/PowerShell/PSReadLine/issues/2698)
 [^three_finger_drag]: https://linux.do/t/topic/212127
+[^how-to-update-or-add-a-registry-key-value-with-powershell]: [How to Update or Add a Registry Key Value with PowerShell](https://devblogs.microsoft.com/powershell-community/how-to-update-or-add-a-registry-key-value-with-powershell/)
