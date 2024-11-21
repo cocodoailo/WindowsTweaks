@@ -137,7 +137,20 @@ net stop LenovoFnAndFunctionKeys
 
 ### 系统偏好设置
 
-关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。
+关闭开始菜单 web 搜索结果运行仓库的 `DisableSearchBoxSuggestions.reg`。或者使用下面的脚本：
+
+```ps1
+# Set variables to indicate value and key to set
+$RegistryPath = 'HKCU:\Software\Policies\Microsoft\Windows\Explorer'
+$Name         = 'DisableSearchBoxSuggestions'
+$Value        = '1'
+# Create the key if it does not exist
+If (-NOT (Test-Path $RegistryPath)) {
+  New-Item -Path $RegistryPath -Force | Out-Null
+}  
+# Now set the value
+New-ItemProperty -Path $RegistryPath -Name $Name -Value $Value -PropertyType DWORD -Force
+```
 
 打开 PowerShell 运行下面的命令可以方便地进行系统偏好设置。不知道为什么，隐藏小组件通过 PowerShell 会提示没有权限。
 
