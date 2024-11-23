@@ -22,10 +22,12 @@
 
 从 Microsoft Store 获取和使用 `winget` 安装是一样的, 你也可以通过 `winget` 安装.
 
-- PowerShell
+Tools I like using on Windows
+
+- PowerShell (`winget install Microsoft.PowerShell`)
 - Microsoft PowerToys
 - Auto Dark Mode
-- Visual Studio Code
+- Visual Studio Code (`winget install Microsoft.VisualStudioCode`)
 - Three Finger Drag[^three_finger_drag]
 - Visual Studio (可选)
 
