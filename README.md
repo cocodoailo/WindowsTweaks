@@ -133,6 +133,30 @@ sc config LenovoFnAndFunctionKeys start=disabled
 net stop LenovoFnAndFunctionKeys
 ```
 
+### VSCode
+
+在终端里面 `C-w` 不要关闭标签页：
+
+```json
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.terminal.killEditor"
+    ],
+```
+
+`C-e` 跳到行尾，不要打开 quickOpen:
+
+```json
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    }
+]
+```
+
+
+
 ### 小技巧
 
 #### 设置终端代理
